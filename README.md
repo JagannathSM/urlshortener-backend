@@ -15,3 +15,14 @@ II. URL ROUTES [ REQUIRED: BEARER TOKEN -- CREATE WHEN LOG-IN ]:
   2. /url/create --> Create new Shorten URL.
   3. /url/redirect/:shortURL --> To increase the URL Click Count and redirect User to Actual URL.
   4. /url/delete/:UrlId --> To delete the URL by its ID.
+
+# npm requires:
+
+1. express --> To run node server
+2. jsonwebtoken --> To create unique bearer token
+3. bcryptjs --> To encrypt password before storing in DB
+4. mongoose --> node to DB connect
+5. nodemailer --> To generate Authentication mails
+6. body-parser --> To make incoming req as json
+7. dotenv
+8. cors [ for local testing purpose ]
